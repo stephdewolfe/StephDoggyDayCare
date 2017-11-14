@@ -1,4 +1,4 @@
-<h1>My Dogs</h1>
+<h1>My Dogs (Index View)</h1>
 
 <%= link_to "Add a new dog", new_dog_path, class: 'btn btn-info' %>
 
@@ -22,6 +22,7 @@
         <td><%= puppy.name %></td>
         <td><%= puppy.breed %></td>
         <td><%= puppy.age %></td>
+        <td><%= link_to'show', dog_path(puppy) %></td>
       </tr>
 <% end %>
 
