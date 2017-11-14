@@ -48,10 +48,10 @@ def destroy
   end
 end
 
-  private
+ private
 
   def dog_params
-    params.required(:dog).permit(:name, :age, :breed)
+    params.required(:dog).permit(:name, :age, :breed, :owner)
   end
 
   def set_dog
